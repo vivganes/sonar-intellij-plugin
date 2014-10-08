@@ -92,7 +92,7 @@ public class RunLocalAnalysisScriptTask implements Runnable {
     sonarConsole.info("working dir: " + this.workingDir.getPath());
     sonarConsole.info("run: " + this.sourceCode);
 
-    final Stopwatch stopwatch = new Stopwatch().start();
+    final Stopwatch stopwatch = Stopwatch.createStarted();
 
     final Process process;
     try {
