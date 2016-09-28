@@ -4,7 +4,7 @@ SonarQube IntelliJ Community Plugin
 ===================================
 
 The main goal of this plugin is to show [SonarQube](http://sonarqube.org) issues directly within your IntelliJ IDE.
-Currently the plugin is build to work in IntelliJ IDEA, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode and Android Studio with any programming language you can analyze in SonarQube.
+Currently the plugin is built to work in IntelliJ IDEA, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode and Android Studio with any programming language you can analyze in SonarQube.
 
 Two tasks are covered by the plugin: 
 * downloading issues of previously analyzed code from a Sonar server and show them in your IDE
@@ -17,7 +17,7 @@ We appreciate constructive feedback and contributions of any kind, so please rep
 
 ### Project Configuration
 
-You can install the "SonarQube Community Plugin" via the plugin manager inside your Jetbrains IDE or download it from the [Jetbrains Plugin Repository](http://plugins.jetbrains.com/plugin/7238). After the installation, you first of all need to configure the connection to your Sonar server. This is done per project and/ or module. You can use a remote server or a local one on your machine.
+You can install the "SonarQube Community Plugin" via the plugin manager inside your Jetbrains IDE or download it from the [Jetbrains Plugin Repository](http://plugins.jetbrains.com/plugin/7238). After the installation, you first of all need to configure the connection to your Sonar server. This is done per project and/or module. You can use a remote server or a local one on your machine.
 
 In your IDE go to `Preferences -> SonarQube`. 
 
@@ -144,7 +144,7 @@ Using the placeholders you can define one script and reuse it in several project
 For example in a multi module project, you will find `sonar-report.json` in following folders:
 
 - `/path/to/project/target/sonar/sonar-report.json` if executing analysis (see previous maven / gradle command) in project folder (i.e. `/path/to/project`).
-- `/path/to/project/mobule/target/sonar/sonar-report.json` if executing analysis in a module folder (i.e. `/path/to/project/module`).
+- `/path/to/project/module/target/sonar/sonar-report.json` if executing analysis in a module folder (i.e. `/path/to/project/module`).
 
 **NOTE: if your module.iml files are not located in same directory as the module root, then you can override the working directory manually.**
 
